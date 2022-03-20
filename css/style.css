@@ -145,7 +145,7 @@ main {
 }
 .projectHeading {
   font-size: 80px;
-  padding: 10px;
+  /* padding: 10px; */
   background-color: #a89991;
   color: white;
 }
@@ -162,7 +162,7 @@ main {
   /* align-items:center; */
 }
 .items {
-  margin: 40px 10px;
+  margin: 40px 5px;
   /* border: 1px solid green; */
   box-shadow: 2px 2px rgba(169, 179, 179, 0.4);
   border-radius: 20px;
@@ -172,13 +172,31 @@ main {
   background-color: white;
 }
 .item_left {
-  min-width: 60vw;
+  min-width: 58vw;
   background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .item_right {
   min-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
+.projectname {
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+.valueproposition {
+  margin-bottom: 50px;
+  margin: 0px 30px 50px 30px;
+}
+.projectDescription {
+  margin: 0px 30px;
+}
 footer {
   background-color: #292c2c;
   color: white;
