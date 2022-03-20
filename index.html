@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Amandeep's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <!-- <script src="js/index.js"></script> -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="a_logo">
+                <a href="#">Amandeep's Portfolio</a>
+            </div>
+
+            <div class="about">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+            
+            <div class="rightmain">
+                    <div class="myinfo_mainblock">
+                    <div class="myname_section">
+                            <div class="myname">Amandeep Singh</div>
+                            <div class="designation">Mobile Application Developer</div>
+                            <div class="brief_description">I’m a front-end developer and general doodler with a keen eye for creating engaging UI, bringing products to life.</div>
+                    </div>
+                    <div class="myImages_section">
+                        <img class="mySlides slider-animate-left " src="https://source.unsplash.com/900x450/?computerscience" alt="youtube" >
+                        <img class="mySlides slider-animate-left " src="https://source.unsplash.com/900x450/?Canada" alt="youtube" >
+                        <img class="mySlides slider-animate-left " src="Images/profilepic.jpeg" alt="Aman" >
+                        <!-- <img class="mySlides slider-animate-left " src="img/Ustaad.jpg" alt="youtube" > -->
+                        <!-- <img class="mySlides slider-animate-left " src="https://source.unsplash.com/900x450/?Motorcycle" alt="youtube" >
+                        <img class="mySlides slider-animate-left " src="https://source.unsplash.com/900x450/?royalenfield" alt="youtube">
+                        <img class="mySlides slider-animate-left " src="https://source.unsplash.com/900x450/?Motorcycle" alt="youtube" >
+                        <img class="mySlides slider-animate-left " src="https://source.unsplash.com/900x450/?india" alt="youtube" >
+                        <img class="mySlides slider-animate-left " src="https://source.unsplash.com/900x450/?Canada" alt="youtube" > -->
+                    </div>
+                </div>
+                <div class="projectHeading"> Projects</div>
+                <div class="right">
+                    <div class="items">
+                        <div class="item_left">left</div>
+                        <div class="item_right">right</div>
+                    </div>
+                    <div class="items">
+                        <div class="item_right">left</div>
+                        <div class="item_left">right</div>
+                    </div>
+
+                    <div class="items">
+                        <div class="item_left">left</div>
+                        <div class="item_right">right</div>
+                    </div>
+                    <div class="items">
+                        <div class="item_right">left</div>
+                        <div class="item_left">right</div>
+                    </div>
+                    
+
+                </div>
+            
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright @Copy youtube.com
+    </footer>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2500); 
+        }
+        </script>
+</body>
+
+</html>
