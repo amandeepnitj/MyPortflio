@@ -72,134 +72,78 @@ main {
 }
 .main {
   display: flex;
+  justify-content: center;
+  /* align-items: center; */
   min-height: 90vh;
+  padding: 0px 40px;
+  flex-direction: column;
+
   /* border: 1px solid peru; */
 }
-.left {
-  min-width: 15vw;
-  /* border: 1px solid palevioletred; */
-  background-color: #292c2c;
-  color: white;
+.sectioncolor {
+  background-color: #495057;
+  padding: 20px;
+  margin: 5px 0px;
 }
-.left ul {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center;
-    justify-items: center; */
+.sectionfont {
+  font-size: 22px;
 }
-.left ul li {
-  /* border: 1px solid burlywood; */
-  text-align: center;
-  text-decoration: none;
-  list-style: none;
-  padding: 15px 0px;
-  font-size: 16px;
-}
-.left ul li:hover {
-  background-color: rgb(117, 134, 134);
-}
-.leftlinks {
-  text-decoration: none;
-  color: white;
-}
-.rightslideshow {
-  display: flex;
-  justify-content: center;
-  /* border: 1px solid green; */
-  padding: 5px;
-  background-color: rgb(20, 20, 20);
-}
-.mySlides {
-  border-radius: 10px 100px / 120px;
-
-  width: 500px;
-  height: 450px;
-}
-.myinfo_mainblock {
+.projectinfo {
   height: 500px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  /* padding-top: 80px; */
+  background-color: #495057;
 }
-.myname_section {
-  min-width: 50vw;
-  background-color: cadetblue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.myname {
-  font-size: 80px;
-  padding: 5px;
-}
-.designation {
-  font-size: 30px;
-  padding: 5px;
-}
-.brief_description {
-  margin-top: 10px;
-  max-width: 500px;
-}
-.myImages_section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 50vw;
-  background-color: grey;
-}
-.projectHeading {
-  font-size: 80px;
-  /* padding: 10px; */
-  background-color: #a89991;
-  color: white;
-}
-.right {
-  /* border: 1px solid powderblue; */
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 10px;
-  /* align-content: space-between; */
-  /* border: 1px solid grey; */
-  /* justify-content: center; */
-  /* align-items:center; */
-}
-.items {
-  margin: 40px 5px;
-  /* border: 1px solid green; */
-  box-shadow: 2px 2px rgba(169, 179, 179, 0.4);
-  border-radius: 20px;
-  min-height: 80vh;
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-}
-.item_left {
-  min-width: 58vw;
-  background-color: grey;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.item_right {
+.projectinfoleft {
   min-width: 40vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 50px;
 }
-.projectname {
-  font-size: 50px;
-  margin-bottom: 100px;
+.projectheadingandologo {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+.projectheading {
+  font-size: 100px;
+  margin-left: 100px;
+}
+.slogan {
+  margin-bottom: 30px;
+  /* margin-left: 50px; */
+  font-size: 30px;
 }
 .valueproposition {
-  margin-bottom: 50px;
-  margin: 0px 30px 50px 30px;
+  font-size: 20px;
 }
-.projectDescription {
-  margin: 0px 30px;
+.projectinforight {
+  min-width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.heading {
+  padding: 20px 0px;
+  font-size: 50px;
+}
+.wireframes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.wireframes img {
+  margin: 20px 20px;
+}
+.colors {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+}
+.colors img {
+  margin-left: 20px;
 }
 footer {
   background-color: #292c2c;
@@ -246,7 +190,7 @@ footer {
 
 @media screen and (max-width: 550px) {
   /* .rightslideshow{
-        display: none; */
+          display: none; */
   .mySlides {
     width: 300px;
     height: 220px;
